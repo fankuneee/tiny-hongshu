@@ -4,7 +4,7 @@
  * @Author: huzhenghui
  * @Date: 2023-06-27 13:21:25
  * @LastEditors: huzhenghui
- * @LastEditTime: 2023-06-27 14:29:48
+ * @LastEditTime: 2023-06-27 18:17:16
  */
 const TravelDetailsPage: React.FC = () => {
   const arr = new Array(5).fill(0)
@@ -31,7 +31,7 @@ const TravelDetailsPage: React.FC = () => {
         <div className="text-4xl">07:00</div>
       </div>
       <div className="flex flex-row">
-        <div className="border-l border-dashed border-gray-500 mx-10"></div>
+        <div className="w-1 bg-white mx-10"></div>
         <div className="bg-cyan-300/10 rounded-lg shadow-xl flex-grow p-2">
           <p>asddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdas</p>
           <p>asddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdas</p>
