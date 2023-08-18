@@ -4,7 +4,7 @@
  * @Author: huzhenghui
  * @Date: 2023-06-27 09:45:22
  * @LastEditors: huzhenghui
- * @LastEditTime: 2023-06-29 09:29:39
+ * @LastEditTime: 2023-08-18 11:47:55
  */
 import './globals.css'
 import { Inter } from 'next/font/google'
@@ -28,17 +28,17 @@ export default function RootLayout({
         <div className="z-[1000] fixed flex-none top-0 left-0 right-0 text-white py-4">
           <div className="container mx-auto px-4">
             <nav className="flex items-center justify-between">
-              <a href="#" className="text-xl font-bold">Logs</a>
-              {/* <ul className="flex space-x-4">
-                <li><a href="#" className="hover:text-gray-300">Home</a></li>
-                <li><a href="#" className="hover:text-gray-300">About</a></li>
-                <li><a href="#" className="hover:text-gray-300">Services</a></li>
-                <li><a href="#" className="hover:text-gray-300">Contact</a></li>
-              </ul> */}
+              <a href="/" className="text-xl font-bold">LOGS FU</a>
+              <ul className="flex space-x-4">
+                <li><a href="/travel" className="hover:text-gray-300">Travel</a></li>
+                <li><a href="/travel" className="hover:text-gray-300">Travel</a></li>
+                <li><a href="/travel" className="hover:text-gray-300">Travel</a></li>
+                <li><a href="/travel" className="hover:text-gray-300">Travel</a></li>
+              </ul>
             </nav>
           </div>
         </div>
-        <div className="">
+        <div className="pt-16 h-full absolute w-full">
           {children}
         </div>
       </body>
