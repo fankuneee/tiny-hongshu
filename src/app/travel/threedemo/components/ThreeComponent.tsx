@@ -4,7 +4,7 @@
  * @Author: huzhenghui
  * @Date: 2023-08-18 13:23:11
  * @LastEditors: huzhenghui
- * @LastEditTime: 2023-08-18 13:42:46
+ * @LastEditTime: 2023-08-18 16:22:57
  */
 // components/ThreeComponent.js
 
@@ -13,18 +13,21 @@ import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
 const ThreeComponent = () => {
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const scene = new THREE.Scene();
-    const width = containerRef.current?.clientWidth;
+    const width: number = containerRef.current?.clientWidth || 0;
     console.log("🚀 ~ file: ThreeComponent.tsx:21 ~ useEffect ~ width:", width)
-    const height = containerRef.current?.clientHeight;
+    const height: number = containerRef.current?.clientHeight || 0;
     console.log("🚀 ~ file: ThreeComponent.tsx:23 ~ useEffect ~ height:", height)
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(width, height);
-    containerRef.current?.appendChild(renderer.domElement);
+    if (containerRef.current) {
+      containerRef.current.appendChild(renderer.domElement);
+    }
+    
 
     const geometry = new THREE.BoxGeometry();
     const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
@@ -41,8 +44,8 @@ const ThreeComponent = () => {
     };
 
     const handleResize = () => {
-      const newWidth = containerRef.current.clientWidth;
-      const newHeight = containerRef.current.clientHeight;
+      const newWidth: number = containerRef.current?.clientWidth || 0;
+      const newHeight: number = containerRef.current?.clientHeight || 0;
       renderer.setSize(newWidth, newHeight);
       camera.aspect = newWidth / newHeight;
       camera.updateProjectionMatrix();
