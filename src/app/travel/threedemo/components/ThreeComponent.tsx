@@ -4,7 +4,7 @@
  * @Author: huzhenghui
  * @Date: 2023-08-18 13:23:11
  * @LastEditors: huzhenghui
- * @LastEditTime: 2023-08-18 16:22:57
+ * @LastEditTime: 2023-08-18 16:34:59
  */
 // components/ThreeComponent.js
 
@@ -64,7 +64,9 @@ const ThreeComponent = () => {
     };
   }, []);
 
-  return <div ref={containerRef} style={{ width: '100%', height: '100%' }}></div>;
+  return (
+    <div ref={containerRef} className='w-full h-full' />
+  );
 };
 
 export default ThreeComponent;
