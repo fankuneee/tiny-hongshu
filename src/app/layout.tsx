@@ -4,7 +4,7 @@
  * @Author: huzhenghui
  * @Date: 2023-06-27 09:45:22
  * @LastEditors: huzhenghui
- * @LastEditTime: 2023-08-23 09:54:48
+ * @LastEditTime: 2023-08-24 17:53:31
  */
 import './globals.css'
 import { Inter } from 'next/font/google'
@@ -30,10 +30,7 @@ export default function RootLayout({
             <nav className="flex items-center justify-between">
               <a href="/" className="text-xl font-bold">LOGS FU</a>
               <ul className="flex space-x-4">
-                <li><a href="/travel" className="hover:text-gray-300">Travel</a></li>
-                <li><a href="/travel" className="hover:text-gray-300">Travel</a></li>
-                <li><a href="/travel" className="hover:text-gray-300">Travel</a></li>
-                <li><a href="/travel" className="hover:text-gray-300">Travel</a></li>
+                <li><a href="/travel" className="hover:text-gray-300">Demo</a></li>
               </ul>
             </nav>
           </div>

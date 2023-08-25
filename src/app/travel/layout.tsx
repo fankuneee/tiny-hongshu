@@ -4,7 +4,7 @@
  * @Author: huzhenghui
  * @Date: 2023-08-18 10:36:37
  * @LastEditors: huzhenghui
- * @LastEditTime: 2023-08-23 12:42:18
+ * @LastEditTime: 2023-08-24 17:59:52
  */
 export default function RootLayout({
   children,
@@ -28,7 +28,7 @@ export default function RootLayout({
               <div className="h-full w-14 bg-red-100 rounded-lg">
               </div>
               <div className="h-full w-full">
-                <a href="/travel/list" className="h-full w-full pl-4 flex items-center ">列表 Demo</a>
+                <a href="/travel/list" className="h-full w-full pl-4 flex items-center ">list Demo</a>
               </div>
             </li>
             <li className="h-12 m-2 rounded-lg flex items-center justify-center hover:bg-cyan-300/20">
@@ -38,22 +38,20 @@ export default function RootLayout({
                 <a href="/travel/threedemo" className="h-full w-full pl-4 flex items-center ">Three.js Demo</a>
               </div>
             </li>
-            <li className="h-12 m-2 rounded-lg flex items-center justify-center hover:bg-cyan-300/20">
+            {/* <li className="h-12 m-2 rounded-lg flex items-center justify-center hover:bg-cyan-300/20">
               <div className="h-full w-14 bg-red-100 rounded-lg">
               </div>
               <div className="h-full w-full">
                 <a href="/travel/konvademo" className="h-full w-full pl-4 flex items-center ">konvademo Demo</a>
               </div>
+            </li> */}
+            <li className="h-12 m-2 rounded-lg flex items-center justify-center hover:bg-cyan-300/20">
+              <div className="h-full w-14 bg-red-100 rounded-lg">
+              </div>
+              <div className="h-full w-full">
+                <a href="/travel/pixidemo" className="h-full w-full pl-4 flex items-center ">莱茵登录页 Demo</a>
+              </div>
             </li>
-            {arr.map(item => 
-              <li key={item} className="h-12 m-2 rounded-lg flex items-center justify-center hover:bg-cyan-300/20">
-                <div className="h-full w-14 bg-red-100 rounded-lg">
-                </div>
-                <div className="h-full w-full">
-                  <a href="/" className="h-full w-full pl-4 flex items-center ">test</a>
-                </div>
-              </li>
-            )}
           </ul>
         </div>
       </div>

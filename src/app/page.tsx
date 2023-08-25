@@ -4,7 +4,7 @@
  * @Author: huzhenghui
  * @Date: 2023-06-27 09:45:22
  * @LastEditors: huzhenghui
- * @LastEditTime: 2023-06-29 16:38:23
+ * @LastEditTime: 2023-08-24 17:58:43
  */
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
       </div>
       <div className="w-full h-full bg-black bg-fixed bg-[center_top_0] bg-cover flex flex-col justify-center items-center">
         <div className="z-10 text-center text-white mx-auto max-w-xl">
-          <h1 className="text-2xl lg:text-4xl mb-4 font-bold uppercase italic">POWERED BY CHATGPT.</h1>
+          <h1 className="text-2xl lg:text-4xl mb-4 font-bold uppercase italic">LOGS FU.</h1>
         </div>
       </div>
     </div>
