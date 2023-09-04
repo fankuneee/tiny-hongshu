@@ -4,7 +4,7 @@
  * @Author: huzhenghui
  * @Date: 2023-08-18 10:36:37
  * @LastEditors: huzhenghui
- * @LastEditTime: 2023-08-24 17:59:52
+ * @LastEditTime: 2023-09-04 16:46:54
  */
 export default function RootLayout({
   children,
@@ -50,6 +50,13 @@ export default function RootLayout({
               </div>
               <div className="h-full w-full">
                 <a href="/travel/pixidemo" className="h-full w-full pl-4 flex items-center ">莱茵登录页 Demo</a>
+              </div>
+            </li>
+            <li className="h-12 m-2 rounded-lg flex items-center justify-center hover:bg-cyan-300/20">
+              <div className="h-full w-14 bg-red-100 rounded-lg">
+              </div>
+              <div className="h-full w-full">
+                <a href="/travel/echartsdemo" className="h-full w-full pl-4 flex items-center ">Echarts Demo</a>
               </div>
             </li>
           </ul>

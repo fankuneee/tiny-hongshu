@@ -4,10 +4,11 @@
  * @Author: huzhenghui
  * @Date: 2023-06-27 09:45:22
  * @LastEditors: huzhenghui
- * @LastEditTime: 2023-08-24 17:53:31
+ * @LastEditTime: 2023-09-04 17:15:26
  */
 import './globals.css'
 import { Inter } from 'next/font/google'
+import {Providers} from "./providers";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,9 +36,11 @@ export default function RootLayout({
             </nav>
           </div>
         </div>
-        <div className="pt-16 h-full absolute w-full">
-          {children}
-        </div>
+        <Providers>
+          <div className="pt-16 h-full absolute w-full">
+              {children}
+          </div>
+        </Providers>
       </body>
     </html>
   )
